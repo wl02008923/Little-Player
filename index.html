@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>music</title>
+    <link rel="stylesheet" href="css/bootsrtap.min.css">
+    <style>
+      body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .colorChange{
+        position: relative;
+        width: 70em;
+        height: 60em;
+      }
+      .button{
+        position: absolute;
+        margin-top: 2em;
+        width:2em;
+        height: 2em;
+        border-radius: 10px 10px;
+        box-shadow: 0px 0px 10px 3px white;
+        z-index: 3;
+      }
+      #b1{
+        background-color: #b3d9ff;
+      }
+      #b2{
+        background-color: #ffb3f3;
+        margin-top: 6em;
+      }
+      #b3{
+        background-color: #ffbeb3;
+        margin-top: 10em;
+      }
+      #b4{
+        background-color: #ffedb3;
+        margin-top: 14em;
+      }
+      #b5{
+        background-color: #b3ffb3;
+        margin-top: 18em;
+      }
+      #reload{
+        background-color: white;
+        margin-top: 22em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="colorChange">
+      <div id="b1" class="button">
+        <audio id="music1">
+          <source = src="music/1.mp3" type="audio/mp3">
+        </audio>
+      </div>
+      <div id="b2" class="button">
+        <audio id="music2">
+          <source = src="music/2.mp3" type="audio/mp3">
+        </audio>
+      </div>
+      <div id="b3" class="button">
+        <audio id="music3">
+          <source = src="music/3.mp3" type="audio/mp3">
+        </audio>
+      </div>
+      <div id="b4" class="button">
+        <audio id="music4">
+          <source = src="music/4.mp3" type="audio/mp3">
+        </audio>
+      </div>
+      <div id="b5" class="button">
+        <audio id="music5">
+          <source = src="music/5.mp3" type="audio/mp3">
+        </audio>
+      </div>
+      <div id="reload" class="button">
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
